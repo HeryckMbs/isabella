@@ -2164,17 +2164,29 @@ function createGuidingLightTarget(index: number) {
   floatingCrystal.scale.set(0.76, 1.18, 0.76);
   target.add(floatingCrystal);
 
+  for (let i = 0; i < 7; i += 1) {
+    const shard = makeMesh(new THREE.TetrahedronGeometry(0.08 + (i % 3) * 0.012, 1), crystalMaterial.clone(), false, false);
+    const angle = (i / 7) * Math.PI * 2;
+    shard.name = 'care-light-target-shard';
+    shard.userData.angle = angle;
+    shard.userData.radius = 0.36 + (i % 2) * 0.06;
+    shard.userData.height = 0.76 + (i % 4) * 0.07;
+    shard.position.set(Math.cos(angle) * shard.userData.radius, shard.userData.height, Math.sin(angle) * shard.userData.radius);
+    shard.rotation.set(i * 0.7, angle, i * 0.34);
+    target.add(shard);
+  }
+
   const flameMaterial = new THREE.MeshBasicMaterial({
     color: 0xfff4b0,
     transparent: true,
-    opacity: 0.82,
+    opacity: 0.54,
     side: THREE.DoubleSide,
     depthWrite: false
   });
   for (let i = 0; i < 3; i += 1) {
-    const flame = makeMesh(new THREE.PlaneGeometry(0.28 - i * 0.045, 0.95 - i * 0.12), flameMaterial.clone(), false, false);
+    const flame = makeMesh(new THREE.PlaneGeometry(0.22 - i * 0.038, 0.54 - i * 0.07), flameMaterial.clone(), false, false);
     flame.name = 'care-light-target-flame';
-    flame.position.y = 0.92 + i * 0.05;
+    flame.position.y = 0.76 + i * 0.04;
     flame.rotation.y = (i / 3) * Math.PI;
     target.add(flame);
   }
@@ -2192,22 +2204,8 @@ function createGuidingLightTarget(index: number) {
     );
     beacon.name = 'care-light-target-beacon';
     beacon.position.y = 1.0;
-    beacon.scale.set(1.65, 2.2, 1);
+    beacon.scale.set(1.32, 1.72, 1);
     target.add(beacon);
-
-    const column = new THREE.Sprite(
-      new THREE.SpriteMaterial({
-        map: glowTexture,
-        color: 0xdfffff,
-        transparent: true,
-        opacity: 0.28,
-        depthWrite: false
-      })
-    );
-    column.name = 'care-light-target-column';
-    column.position.y = 1.08;
-    column.scale.set(0.58, 2.65, 1);
-    target.add(column);
   }
 
   return target;
@@ -3151,6 +3149,20 @@ function animateGuidingLightVisual(light: CareLight, index: number, delta: numbe
         child.position.y = 1.05 + Math.sin(elapsed * 2.8 + targetSeed) * 0.055;
       }
 
+      if (child.name === 'care-light-target-shard') {
+        const baseAngle = child.userData.angle as number;
+        const radius = child.userData.radius as number;
+        const height = child.userData.height as number;
+        const angle = baseAngle + elapsed * 0.42;
+        child.position.set(
+          Math.cos(angle) * radius,
+          height + Math.sin(elapsed * 2.3 + baseAngle) * 0.035,
+          Math.sin(angle) * radius
+        );
+        child.rotation.x += delta * 0.8;
+        child.rotation.y += delta * 1.1;
+      }
+
       if (child.name === 'care-light-target-flame') {
         child.rotation.y += delta * 1.4;
         child.scale.y = 0.92 + Math.sin(elapsed * 3.2 + targetSeed + child.id) * 0.1;
@@ -3162,14 +3174,7 @@ function animateGuidingLightVisual(light: CareLight, index: number, delta: numbe
         const sprite = child as THREE.Sprite;
         const material = sprite.material as THREE.SpriteMaterial;
         material.opacity = 0.34 + Math.sin(elapsed * 2.6 + targetSeed) * 0.1;
-        sprite.scale.set(1.56 + Math.sin(elapsed * 2.4 + targetSeed) * 0.1, 2.16, 1);
-      }
-
-      if (child.name === 'care-light-target-column') {
-        const sprite = child as THREE.Sprite;
-        const material = sprite.material as THREE.SpriteMaterial;
-        material.opacity = 0.2 + Math.sin(elapsed * 2.1 + targetSeed) * 0.06;
-        sprite.scale.set(0.52 + Math.sin(elapsed * 1.8 + targetSeed) * 0.05, 2.62, 1);
+        sprite.scale.set(1.22 + Math.sin(elapsed * 2.4 + targetSeed) * 0.08, 1.68, 1);
       }
     });
   }
