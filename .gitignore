@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.vite/
+output/
+
+# Local originals are intentionally not published.
+assets/
+*.log

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "inicio-2018",
+    "source": "assets/IMG-20180209-WA0018.jpg",
+    "caption": "Uma das primeiras lembranças dessa amizade.",
+    "year": "2018",
+    "featured": true,
+    "puzzle": true
+  },
+  {
+    "id": "maio-2018",
+    "source": "assets/IMG-20180520-WA0039.jpg",
+    "caption": "Um começo cheio de histórias pela frente.",
+    "year": "2018",
+    "featured": true,
+    "puzzle": false
+  },
+  {
+    "id": "junho-2018",
+    "source": "assets/IMG-20180602-WA0052.jpg",
+    "caption": "Memória guardada com carinho.",
+    "year": "2018",
+    "featured": false,
+    "puzzle": false
+  },
+  {
+    "id": "agosto-2018",
+    "source": "assets/IMG-20180811-WA0028.jpg",
+    "caption": "Mais um pedaço do caminho.",
+    "year": "2018",
+    "featured": false,
+    "puzzle": false
+  },
+  {
+    "id": "janeiro-2019",
+    "source": "assets/IMG-20190115-WA0138.jpg",
+    "caption": "O tempo passando e a amizade ficando.",
+    "year": "2019",
+    "featured": true,
+    "puzzle": false
+  },
+  {
+    "id": "setembro-2019",
+    "source": "assets/IMG-20190919-WA0074.jpg",
+    "caption": "Dias que viram lembrança boa.",
+    "year": "2019",
+    "featured": false,
+    "puzzle": false
+  },
+  {
+    "id": "outubro-2019",
+    "source": "assets/IMG-20191030-WA0060.jpg",
+    "caption": "Histórias que ainda cabem no peito.",
+    "year": "2019",
+    "featured": false,
+    "puzzle": false
+  },
+  {
+    "id": "abril-2024",
+    "source": "assets/20240420_114521.jpg",
+    "caption": "O hoje também merece virar memória.",
+    "year": "2024",
+    "featured": true,
+    "puzzle": false
+  },
+  {
+    "id": "maio-2024",
+    "source": "assets/20240518_140145.jpg",
+    "caption": "Presença, riso e continuidade.",
+    "year": "2024",
+    "featured": false,
+    "puzzle": false
+  },
+  {
+    "id": "julho-2024",
+    "source": "assets/20240721_161419.jpg",
+    "caption": "Uma amizade que segue.",
+    "year": "2024",
+    "featured": false,
+    "puzzle": false
+  },
+  {
+    "id": "fevereiro-2025",
+    "source": "assets/IMG-20250211-WA0004.jpg",
+    "caption": "Até os dias de hoje.",
+    "year": "2025",
+    "featured": true,
+    "puzzle": false
+  },
+  {
+    "id": "julho-2025",
+    "source": "assets/IMG-20250720-WA0009.jpg",
+    "caption": "O jardim ainda pode crescer.",
+    "year": "2025",
+    "featured": false,
+    "puzzle": false
+  }
+]

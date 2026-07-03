@@ -1,0 +1,137 @@
+{
+  "generatedAt": "2026-07-03T02:11:52.416Z",
+  "photos": [
+    {
+      "id": "inicio-2018",
+      "caption": "Uma das primeiras lembranças dessa amizade.",
+      "year": "2018",
+      "featured": true,
+      "puzzle": true,
+      "width": 1032,
+      "height": 774,
+      "src": "gallery/inicio-2018-large.webp",
+      "thumb": "gallery/inicio-2018-thumb.webp"
+    },
+    {
+      "id": "maio-2018",
+      "caption": "Um começo cheio de histórias pela frente.",
+      "year": "2018",
+      "featured": true,
+      "puzzle": false,
+      "width": 960,
+      "height": 1280,
+      "src": "gallery/maio-2018-large.webp",
+      "thumb": "gallery/maio-2018-thumb.webp"
+    },
+    {
+      "id": "junho-2018",
+      "caption": "Memória guardada com carinho.",
+      "year": "2018",
+      "featured": false,
+      "puzzle": false,
+      "width": 720,
+      "height": 1280,
+      "src": "gallery/junho-2018-large.webp",
+      "thumb": "gallery/junho-2018-thumb.webp"
+    },
+    {
+      "id": "agosto-2018",
+      "caption": "Mais um pedaço do caminho.",
+      "year": "2018",
+      "featured": false,
+      "puzzle": false,
+      "width": 640,
+      "height": 652,
+      "src": "gallery/agosto-2018-large.webp",
+      "thumb": "gallery/agosto-2018-thumb.webp"
+    },
+    {
+      "id": "janeiro-2019",
+      "caption": "O tempo passando e a amizade ficando.",
+      "year": "2019",
+      "featured": true,
+      "puzzle": false,
+      "width": 540,
+      "height": 386,
+      "src": "gallery/janeiro-2019-large.webp",
+      "thumb": "gallery/janeiro-2019-thumb.webp"
+    },
+    {
+      "id": "setembro-2019",
+      "caption": "Dias que viram lembrança boa.",
+      "year": "2019",
+      "featured": false,
+      "puzzle": false,
+      "width": 962,
+      "height": 1280,
+      "src": "gallery/setembro-2019-large.webp",
+      "thumb": "gallery/setembro-2019-thumb.webp"
+    },
+    {
+      "id": "outubro-2019",
+      "caption": "Histórias que ainda cabem no peito.",
+      "year": "2019",
+      "featured": false,
+      "puzzle": false,
+      "width": 1280,
+      "height": 962,
+      "src": "gallery/outubro-2019-large.webp",
+      "thumb": "gallery/outubro-2019-thumb.webp"
+    },
+    {
+      "id": "abril-2024",
+      "caption": "O hoje também merece virar memória.",
+      "year": "2024",
+      "featured": true,
+      "puzzle": false,
+      "width": 4000,
+      "height": 2250,
+      "src": "gallery/abril-2024-large.webp",
+      "thumb": "gallery/abril-2024-thumb.webp"
+    },
+    {
+      "id": "maio-2024",
+      "caption": "Presença, riso e continuidade.",
+      "year": "2024",
+      "featured": false,
+      "puzzle": false,
+      "width": 8160,
+      "height": 4592,
+      "src": "gallery/maio-2024-large.webp",
+      "thumb": "gallery/maio-2024-thumb.webp"
+    },
+    {
+      "id": "julho-2024",
+      "caption": "Uma amizade que segue.",
+      "year": "2024",
+      "featured": false,
+      "puzzle": false,
+      "width": 4000,
+      "height": 2250,
+      "src": "gallery/julho-2024-large.webp",
+      "thumb": "gallery/julho-2024-thumb.webp"
+    },
+    {
+      "id": "fevereiro-2025",
+      "caption": "Até os dias de hoje.",
+      "year": "2025",
+      "featured": true,
+      "puzzle": false,
+      "width": 899,
+      "height": 1599,
+      "src": "gallery/fevereiro-2025-large.webp",
+      "thumb": "gallery/fevereiro-2025-thumb.webp"
+    },
+    {
+      "id": "julho-2025",
+      "caption": "O jardim ainda pode crescer.",
+      "year": "2025",
+      "featured": false,
+      "puzzle": false,
+      "width": 1280,
+      "height": 960,
+      "src": "gallery/julho-2025-large.webp",
+      "thumb": "gallery/julho-2025-thumb.webp"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+- generic [ref=f1e2]:
+  - generic "Jogo homenagem Isabella" [ref=f1e3]
+  - generic:
+    - generic:
+      - generic: Chegada ao jardim
+      - generic: 2018 - hoje
+    - generic:
+      - generic: Heryck
+      - paragraph: Eu começo pequeno e sem detalhes, mas cada lembrança vai revelando um pouco do que essa amizade construiu.
+  - generic "Joystick virtual" [ref=f1e4]
+  - button "Comecar" [active] [ref=f1e7]

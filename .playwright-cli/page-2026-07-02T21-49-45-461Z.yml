@@ -1,0 +1,10 @@
+- generic [ref=f1e2]:
+  - generic "Jogo homenagem Isabella" [ref=f1e3]
+  - generic:
+    - generic:
+      - generic: Trilha das memórias
+      - generic: 0/5 sementes
+    - generic:
+      - generic: Heryck
+      - paragraph: Vamos recolher sementes de lembrança. Cada uma acende um pedaço do caminho.
+  - generic "Joystick virtual" [ref=f1e4]

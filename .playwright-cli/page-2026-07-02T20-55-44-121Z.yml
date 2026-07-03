@@ -1,0 +1,11 @@
+- generic [ref=f8e2]:
+  - generic "Jogo homenagem Isabella" [ref=f8e3]
+  - generic:
+    - generic:
+      - generic: Galeria suspensa
+      - generic: "2018"
+    - generic:
+      - generic: Heryck
+      - paragraph: Um começo cheio de histórias pela frente.
+  - generic "Joystick virtual" [ref=f8e4]
+  - button "Focar" [active] [ref=f8e7]

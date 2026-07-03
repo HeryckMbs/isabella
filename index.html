@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#8ed7f3" />
+    <link rel="icon" href="data:," />
+    <title>Jardim da Isabella</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="game" aria-label="Jogo homenagem Isabella"></canvas>
+
+      <section id="hud" aria-live="polite">
+        <div class="topline">
+          <span id="stage-label">Jardim da Isabella</span>
+          <span id="progress-label">2018 - hoje</span>
+        </div>
+        <div id="narrator-box">
+          <span id="speaker">Heryck</span>
+          <p id="narrator-text"></p>
+        </div>
+      </section>
+
+      <div id="joystick" aria-label="Joystick virtual">
+        <div id="joystick-thumb"></div>
+      </div>
+
+      <div id="objective-pointer" class="hidden" aria-hidden="true"></div>
+
+      <button id="interaction-button" class="hidden" type="button">Interagir</button>
+
+      <section id="puzzle-panel" class="hidden" aria-label="Puzzle de lembrança">
+        <div class="panel-header">
+          <span>Monte a lembrança</span>
+        </div>
+        <div id="puzzle-grid"></div>
+      </section>
+
+      <div id="loading-screen">
+        <div class="loading-card">
+          <span>Jardim da Isabella</span>
+          <p>Preparando as lembranças...</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
